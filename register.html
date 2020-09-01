@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Register</title>
+
+<link href ="register.css" rel = "stylesheet" type ="text/css"> 
+<script type="text/javascript">
+function f1(){
+	var uname = document.getElementById("uname").value;	
+		if (uname == "" || uname == null) {
+		    alert("Name must be filled out");
+		    return false;
+		  }
+	var pwd = document.getElementById("pwd").value;	
+	var rpwd = document.getElementById("rpwd").value;
+		if (pwd == "" || pwd == null || pwd != rpwd) {
+			alert("Re-entered password doesnt match");
+			return false;
+		}
+		
+				
+		var phn = document.getElementById("phn").value;
+		 if( /^\d{10}$/.test(myForm.phn.value)){
+		  //if((inp.value.match(phoneno))
+		      alert("success");
+		        }
+		        alert("enter 10 digit phn no");
+		        return false;
+		        
+
+
+
+    var email = document.getElementById("email").value;
+		 if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.email.value))
+		  {
+		    alert("valid e-mail address");
+		  }
+		    alert("You have entered an invalid email address!");
+		    return (false)
+		}
+ 
+</script>
+</head>
+<body>
+
+<h1><b>REGISTER</b></h1>
+
+<body>
+
+<h3>
+<form name = myForm >
+     Username <input type = "text " placeholder ="enter username" id ="uname"><br><br>
+
+     E-mail <input type = "text " placeholder ="enter E-mail Id" id = "email" ><br><br>  
+     
+     
+     Password <input type = "password"  placeholder ="enter password" id = "pwd"><br><br>
+      
+     Conform Password <input type = "password"  placeholder ="enter password" id = "rpwd"><br><br>
+          
+     <!-- Contact number <input type="number"  placeholder ="enter contact number" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id = "phn"  required>-->
+       Contact number <input type = "number"  placeholder ="enter contact number" id ="phn"><br><br>
+     
+     Gender:<input type ="radio" name ="gender">male
+            <input type ="radio" name ="gender">female<br><br>
+          
+     <input type="checkbox" placeholder =" remember me"> Remember me<br><br>
+     <input type="submit" value="Submit" onClick="return f1();">
+     </form> 
+</h3>
+
+</body>
+
+</html>
