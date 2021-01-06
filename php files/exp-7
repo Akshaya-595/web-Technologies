@@ -1,1 +1,36 @@
 
+<?php
+$myfile = fopen("file.txt", "r") or die("Unable to open file!");
+echo fread($myfile,filesize("file.txt"));
+
+$myfile1 = fopen("newfile.txt", "w");
+$txt = file.txt;
+fwrite($myfile1 ,$txt);
+fclose($myfile1);
+?>
+
+
+
+
+
+
+        file.txt data
+-----------------------------
+AJAX = Asynchronous JavaScript and XML
+CSS = Cascading Style Sheets
+HTML = Hyper Text Markup Language
+PHP = PHP Hypertext Preprocessor
+SQL = Structured Query Language
+SVG = Scalable Vector Graphics
+XML = EXtensible Markup Language
+
+       newfile1.txt data
+------------------------------
+AJAX = Asynchronous JavaScript and XML
+CSS = Cascading Style Sheets
+HTML = Hyper Text Markup Language
+PHP = PHP Hypertext Preprocessor
+SQL = Structured Query Language
+SVG = Scalable Vector Graphics
+XML = EXtensible Markup Language
+       
