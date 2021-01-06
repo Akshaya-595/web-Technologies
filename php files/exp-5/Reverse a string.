@@ -1,0 +1,12 @@
+<form method="post">  
+Enter a String: <input type="text" name="input"><br><br>  
+<input type="submit" name="submit" value="Submit">  
+</form>  
+<?php 
+
+if($_POST)
+{
+   $input = $_POST['input'];
+   echo 'The reverse of String '. $input.  ' is : ' .strrev($input);
+}
+?> 
